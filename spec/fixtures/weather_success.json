@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": -89.61,
+    "lat": 20.97
+  },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 301.16,
+    "feels_like": 304.39,
+    "temp_min": 300.94,
+    "temp_max": 301.16,
+    "pressure": 1014,
+    "humidity": 74
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.58,
+    "deg": 84,
+    "gust": 5.81
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1688275028,
+  "sys": {
+    "type": 1,
+    "id": 7140,
+    "country": "MX",
+    "sunrise": 1688210432,
+    "sunset": 1688258622
+  },
+  "timezone": -21600,
+  "id": 3523349,
+  "name": "Mérida",
+  "cod": 200
+}

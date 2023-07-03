@@ -1,0 +1,18 @@
+<h2>Search</h2>
+<p><b>Latitude: <%= @weather_info.dig("coord", "lat") %></b></p>
+<p><b>Longitude: <%= @weather_info.dig("coord", "lon") %></b></p>
+<p><b>City Name: <%= @weather_info.dig("name") %></b></p>
+
+<h2>Weather Information</h2>
+
+<h3>Temperature</h3>
+<p><b>Temperature:</b> <%= @weather_info.dig("main", "temp") %></p>
+<p><b>Max / Min:</b> <%= @weather_info.dig("main", "temp_max") %> / <%= @weather_info.dig("main", "temp_min") %></p>
+<p><b>Feels like:</b> <%= @weather_info.dig("main", "feels_like") %></p>
+<p><b>Pressure:</b> <%= @weather_info.dig("main", "pressure") %></p>
+<p><b>Humidity:</b> <%= @weather_info.dig("main", "humidity") %></p>
+
+<h3>Wind</h3>
+<p><b>Speed:</b> <%= @weather_info.dig("wind", "speed") %></p>
+<p><b>Degrees:</b> <%= @weather_info.dig("wind", "deg") %></p>
+<p><b>Gust:</b> <%= @weather_info.dig("wind", "gust") %></p>

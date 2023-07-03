@@ -1,0 +1,17 @@
+<h1>What's the weather like now?</h1>
+<%= form_with url: weather_result_url, method: :get do |f| %>
+  <div style="padding-bottom: 20px">
+    <h3>Please provide Latitude and Longitude coords</h3>
+    <%= f.label 'latitude' %>
+    <%= f.text_field :lat %>
+
+    <%= f.label 'longitude' %>
+    <%= f.text_field :lon %>
+  </div>
+  <div style="padding-bottom: 20px">
+    <h3>Or get it by providing the city name</h3>
+    <%= f.label 'Ciudad' %>
+    <%= f.text_field :city_name %>
+  </div>
+  <%= f.submit "Get me the info!", name: nil %>
+<% end %>
